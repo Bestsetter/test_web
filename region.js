@@ -34,7 +34,7 @@ if (window.opener) {
   cityImage.style.marginBottom = "20px";
   document.getElementById("content").appendChild(cityImage);
   document.getElementById("city-text").innerText = `${inputValue}`;
-  fetch("taiwan_all_regions.json")
+  fetch("data.json")
     .then((response) => response.json())
     .then((data) => {
       const contentContainer = document.getElementById("content");
